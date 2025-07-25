@@ -50,9 +50,8 @@ psycopg2-binary==2.9.9 # PostgreSQL adapter for Python
 # --- Financial APIs & Brokers ---
 alpaca-py==0.10.0 # Alpaca API client (AlpacaAdapter)
 python-binance==1.0.19 # Binance API client (BinanceAdapter)
-deriv-api==0.3.1 # Deriv API client (DerivAdapter)
+python-deriv-api # Deriv API client (DerivAdapter)
 # Note: MT5 adapter is referenced, but its specific library (MetaTrader5) is not in provided Dockerfile/environment.yml.
-# If MetaTrader5 is installed via separate means (e.g., custom MT5 Python package), it should be noted.
 # yfinance is installed in MPETI Dockerfile.
 websockets==12.0 # For WebSocket connections (WebSocketManager)
 feedparser==6.0.11 # For parsing RSS feeds (RSSRetriever)
@@ -62,8 +61,7 @@ beautifulsoup4==4.12.3 # For HTML parsing in web scrapers (TradingViewRetriever)
 lxml==5.2.2 # For BeautifulSoup's parser
 
 # --- ZKP (Zero-Knowledge Proofs) Integration ---
-pyo3==0.22.6 # Python-Rust FFI (for priv_zkp_rust)
-oqs==0.10.0 # For Post-Quantum Cryptography (PQCEncryption)
+liboqs-python==0.14.0 # For Post-Quantum Cryptography (PQCEncryption)
 web3==6.19.0 # For Ethereum blockchain interaction (BlockchainLogger)
 
 # --- Zipline-related Libraries (from environment.yml in Dockerfile) ---
@@ -74,7 +72,6 @@ bcolz-zipline==1.13.0
 ffn==1.1.2
 
 # --- Other identified dependencies ---
-# These were in the `pip` output or `environment.yml` but not explicitly imported in core logic
 # Ensure they are truly needed or remove for leaner image if possible.
 shellingham==1.5.4
 typer==0.16.0
@@ -125,3 +122,6 @@ setuptools==70.0.0
 wheel==0.43.0
 pyasn1==0.6.1
 pyasn1-modules==0.4.2
+deepproblog==2.0.6
+torch==2.0.1
+tensorflow==2.19.0
