@@ -50,10 +50,10 @@ psycopg2-binary==2.9.9 # PostgreSQL adapter for Python
 # --- Financial APIs & Brokers ---
 # alpaca-py>=1.0.1,<2.0.0 # Alpaca API client (AlpacaAdapter)
 python-binance==1.0.19 # Binance API client (BinanceAdapter)
-python-deriv-api==0.1.6 # Deriv API client (DerivAdapter) - Pinned to a version compatible with websockets>=10.0.0
+# python-deriv-api==0.1.6 # Deriv API client (DerivAdapter) - Pinned to a version compatible with websockets>=10.0.0
 # Note: MT5 adapter is referenced, but its specific library (MetaTrader5) is not in provided Dockerfile/environment.yml.
 # yfinance is installed in MPETI Dockerfile.
-websockets==10.3 # For WebSocket connections (WebSocketManager)
+websockets==12 # For WebSocket connections (WebSocketManager)
 feedparser==6.0.11 # For parsing RSS feeds (RSSRetriever)
 # gdeltdoc is used by GlobalNewsIngestor, ensure it's installed if not via pip.
 # The previous Dockerfile.txt listed `gdeltdoc` and `bs4`. `bs4` is included as `beautifulsoup4`.
