@@ -264,7 +264,7 @@ class MezzoAgent:
             prompt_parts.append("\nRelevant long-term memories:")
             for mem in relevant_memories[:5]:
                 # Only include content that can be reshared or is not explicitly private
-                if mem.can_be_reshared or mem.confidentiality_level != "private": # Adjust logic as needed
+                if mem.can_be_reshared or mem.confidentiality_level != "private":
                     prompt_parts.append(f"- Type: {mem.type}, Content: {mem.content.get('text', str(mem.content))}, Tags: {', '.join(mem.tags)}, Timestamp: {mem.timestamp.strftime('%Y-%m-%d')}")
                 else:
                     prompt_parts.append(f"- Type: {mem.type}, Content: [Confidential Memory], Tags: {', '.join(mem.tags)}, Timestamp: {mem.timestamp.strftime('%Y-%m-%d')}")
@@ -393,14 +393,13 @@ class MezzoAgent:
             elif action.startswith("teach_subject_"):
                 subject = action.replace("teach_subject_", "")
                 logger.info(f"Mezzo triggering teaching on subject: {subject}")
-                # This would call LLMClient or another teaching service
-                # teaching_content = await self.llm_client.generate_content(f"Teach me about {subject}")
-                # await self.store_grief_event_as_memory(user_id, "teaching_session", {"subject": subject, "content": teaching_content}, tags=["education"])
+                teaching_content = await self.llm_client.generate_content(f"Teach me about {subject}")
+                await self.store_grief_event_as_memory(user_id, "teaching_session", {"subject": subject, "content": teaching_content}, tags=["education"])
             elif action.startswith("mentor_topic_"):
                 topic = action.replace("mentor_topic_", "")
                 logger.info(f"Mezzo triggering mentoring on topic: {topic}")
-                # mentoring_advice = await self.llm_client.generate_content(f"Mentor me on {topic}")
-                # await self.store_grief_event_as_memory(user_id, "mentoring_session", {"topic": topic, "advice": mentoring_advice}, tags=["mentoring"])
+                mentoring_advice = await self.llm_client.generate_content(f"Provide mentorship advice on the topic of {topic}. Focus on practical steps, common challenges, and growth mindset.")
+                await self.store_grief_event_as_memory(user_id, "mentoring_session", {"topic": topic, "advice": mentoring_advice}, tags=["mentoring"])
 
 
     async def store_grief_event_as_memory(self, user_id: str, event_type: str, content: Dict[str, Any], tags: List[str] = None):
