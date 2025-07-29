@@ -118,7 +118,7 @@ pyyaml==6.0.2
 requests-oauthlib==2.0.0
 rich-toolkit==0.14.8
 rsa==4.9.1
-setuptools==70.0.0
+setuptools>=78.1.1
 wheel==0.43.0
 pyasn1==0.6.1
 pyasn1-modules==0.4.2
