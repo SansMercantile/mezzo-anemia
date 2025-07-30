@@ -3,7 +3,7 @@
 # --- Core Frameworks & Utilities ---
 fastapi==0.111.0
 uvicorn==0.29.0
-starlette>=0.47.2
+starlette==0.37.2
 httpx==0.27.0
 pydantic==2.7.4
 pydantic-settings==2.3.4
@@ -118,10 +118,10 @@ pyyaml==6.0.2
 requests-oauthlib==2.0.0
 rich-toolkit==0.14.8
 rsa==4.9.1
-setuptools>=78.1.1
+setuptools==70.0.0
 wheel==0.43.0
 pyasn1==0.6.1
 pyasn1-modules==0.4.2
 deepproblog==2.0.6
-torch>=2.7.1-rc1
+torch==2.0.1
 tensorflow==2.19.0
