@@ -1,5 +1,5 @@
 # sans-mercantile-app/backend/mezzo_anima_line/Dockerfile
-FROM python:3.11-slim-bullseye
+FROM ghcr.io/your-username/mpeti-core/python-base:latest
 
 WORKDIR /app
 
