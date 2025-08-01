@@ -1,5 +1,5 @@
 # sans-mercantile-app/backend/mezzo_anima_line/Dockerfile
-FROM ghcr.io/your-username/mpeti-core/python-base:latest
+FROM ghcr.io/mezzoforteprivilege/python-base:latest
 
 WORKDIR /app
 
