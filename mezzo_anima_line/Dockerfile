@@ -1,5 +1,7 @@
 # sans-mercantile-app/backend/mezzo_anima_line/Dockerfile
-# Set environment variables for Python best practices
+ARG repo_owner
+FROM ghcr.io/${repo_owner}/python-base:latest
+
 ENV PYTHONUNBUFFERED=1
 ENV PYTHONDONTWRITEBYTECODE=1
 
