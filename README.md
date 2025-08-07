@@ -42,7 +42,7 @@ This is an ambitious project, and we cannot do it alone. We are looking for cont
 The best way to start is by checking our Issues tab.
 
 The Roadmap & Platform Implications
-Our work on Mezzo is the first step towards a new category of products under the PRIV Life umbrella: AI personae for emotional continuity, legacy preservation, and secure companionship.
+Our work on Mezzo is a step towards a new category of products under the Mpeti-Core umbrella: AI personae for emotional continuity, legacy preservation, and secure companionship.
 
 Our immediate goals are:
 
