@@ -55,13 +55,13 @@ Build a Community: Grow a diverse group of contributors to guide the project.
 Secure Funding: Find partners and investors who believe in our vision and want to help us accelerate development.
 
 Contact & Support
-Website: sansmercantile.com
+Website: https://sansmercantile.com
 
-LinkedIn: za.linkedin.com/company/sans-mercantile
+LinkedIn: https://za.linkedin.com/company/sans-mercantile
 
-Crunchbase: crunchbase.com/organization/sans-mercantile
+Crunchbase: https://crunchbase.com/organization/sans-mercantile
 
-WhatsApp Channel: Join our Channel
+WhatsApp Channel: https://whatsapp.com/channel/0029Vb5Xb0mKmCPTFqKMqL2l
 
 Contact: For partnership or investment inquiries, please reach out to hello@sansmercantile.com.
 
